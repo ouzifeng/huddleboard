@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - HuddleBoard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body
+    style="
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      min-height: 100vh;
+    "
+  >
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-clipboard-list"></i>
+          <span>HuddleBoard</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="login.html" class="nav-link nav-login">Login</a></li>
+          <li>
+            <a href="signup.html" class="nav-link nav-signup active">Sign Up</a>
+          </li>
+        </ul>
+        <div class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Signup Form -->
+    <div class="form-container">
+      <div style="text-align: center; margin-bottom: 30px">
+        <div
+          style="
+            background: #2563eb;
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 32px;
+          "
+        >
+          <i class="fas fa-clipboard-list"></i>
+        </div>
+        <h1 class="form-title">Join HuddleBoard</h1>
+        <p style="color: #64748b; font-size: 16px">
+          Create your account and start collaborating today
+        </p>
+      </div>
+
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a strong password"
+            required
+          />
+          <div style="margin-top: 8px; font-size: 12px; color: #64748b">
+            Password must be at least 8 characters long
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm your password"
+            required
+          />
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <label
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 12px;
+              font-size: 14px;
+              color: #64748b;
+              cursor: pointer;
+              line-height: 1.5;
+            "
+          >
+            <input
+              type="checkbox"
+              name="terms"
+              style="margin: 4px 0 0 0"
+              required
+            />
+            <span
+              >I agree to the
+              <a
+                href="#"
+                style="color: #2563eb; text-decoration: none; font-weight: 500"
+                >Terms of Service</a
+              >
+              and
+              <a
+                href="#"
+                style="color: #2563eb; text-decoration: none; font-weight: 500"
+                >Privacy Policy</a
+              ></span
+            >
+          </label>
+        </div>
+
+        <div style="margin-bottom: 20px">
+          <label
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 12px;
+              font-size: 14px;
+              color: #64748b;
+              cursor: pointer;
+              line-height: 1.5;
+            "
+          >
+            <input
+              type="checkbox"
+              name="newsletter"
+              style="margin: 4px 0 0 0"
+            />
+            <span>I'd like to receive product updates and tips via email</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">
+          Create Account
+        </button>
+      </form>
+
+      <div class="form-link">
+        <p>Already have an account? <a href="login.html">Sign in here</a></p>
+      </div>
+
+      <!-- Social Signup Options -->
+      <div style="margin-top: 30px">
+        <div
+          style="text-align: center; margin-bottom: 20px; position: relative"
+        >
+          <span
+            style="
+              background: white;
+              padding: 0 20px;
+              color: #94a3b8;
+              font-size: 14px;
+            "
+            >Or sign up with</span
+          >
+          <hr
+            style="
+              position: absolute;
+              top: 50%;
+              left: 0;
+              right: 0;
+              margin: 0;
+              border: none;
+              height: 1px;
+              background: #e2e8f0;
+              z-index: -1;
+            "
+          />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px">
+          <button
+            type="button"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+              padding: 12px;
+              border: 2px solid #e2e8f0;
+              border-radius: 8px;
+              background: white;
+              color: #64748b;
+              font-weight: 500;
+              cursor: pointer;
+              transition: all 0.3s ease;
+            "
+          >
+            <i class="fab fa-google" style="color: #ea4335"></i>
+            Google
+          </button>
+          <button
+            type="button"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+              padding: 12px;
+              border: 2px solid #e2e8f0;
+              border-radius: 8px;
+              background: white;
+              color: #64748b;
+              font-weight: 500;
+              cursor: pointer;
+              transition: all 0.3s ease;
+            "
+          >
+            <i class="fab fa-microsoft" style="color: #00a1f1"></i>
+            Microsoft
+          </button>
+        </div>
+      </div>
+
+      <!-- Benefits -->
+      <div
+        style="
+          margin-top: 40px;
+          padding: 24px;
+          background: #f8fafc;
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+        "
+      >
+        <h3
+          style="
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 16px;
+            text-align: center;
+          "
+        >
+          What you get with HuddleBoard:
+        </h3>
+        <div style="display: grid; gap: 12px; font-size: 14px; color: #64748b">
+          <div style="display: flex; align-items: center; gap: 8px">
+            <i class="fas fa-check" style="color: #10b981; font-size: 12px"></i>
+            Free plan with 3 whiteboards and unlimited collaboration
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px">
+            <i class="fas fa-check" style="color: #10b981; font-size: 12px"></i>
+            Real-time collaboration with your team
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px">
+            <i class="fas fa-check" style="color: #10b981; font-size: 12px"></i>
+            Access from any device - desktop, tablet, or mobile
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px">
+            <i class="fas fa-check" style="color: #10b981; font-size: 12px"></i>
+            14-day free trial of Pro features
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

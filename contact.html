@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - HuddleBoard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-clipboard-list"></i>
+          <span>HuddleBoard</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="login.html" class="nav-link nav-login">Login</a></li>
+          <li><a href="signup.html" class="nav-link nav-signup">Sign Up</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>
+          Have questions about HuddleBoard? We'd love to hear from you. Send us
+          a message and we'll respond as soon as possible.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section">
+      <div class="container">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+          "
+        >
+          <!-- Contact Form -->
+          <div>
+            <div class="form-container" style="margin: 0; max-width: none">
+              <h2 class="form-title">Send us a Message</h2>
+              <form action="#" method="POST">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="company">Company (Optional)</label>
+                  <input type="text" id="company" name="company" />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    style="
+                      width: 100%;
+                      padding: 12px 16px;
+                      border: 2px solid #e5e7eb;
+                      border-radius: 8px;
+                      font-size: 16px;
+                      font-family: 'Inter', sans-serif;
+                    "
+                    required
+                  >
+                    <option value="">Select a topic</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="sales">Sales & Pricing</option>
+                    <option value="support">Technical Support</option>
+                    <option value="partnership">Partnership</option>
+                    <option value="press">Press & Media</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tell us how we can help you..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div>
+            <h2
+              style="
+                font-size: 32px;
+                font-weight: 700;
+                color: #1e293b;
+                margin-bottom: 30px;
+              "
+            >
+              Other Ways to Reach Us
+            </h2>
+
+            <div style="space-y: 40px">
+              <div style="margin-bottom: 40px">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 12px;
+                  "
+                >
+                  <div
+                    style="
+                      background: #2563eb;
+                      color: white;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h3
+                      style="
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin: 0;
+                      "
+                    >
+                      Email Support
+                    </h3>
+                    <p style="color: #64748b; margin: 0">
+                      Get help with technical questions
+                    </p>
+                  </div>
+                </div>
+                <p style="color: #2563eb; font-weight: 500; margin-left: 66px">
+                  support@huddleboard.com
+                </p>
+              </div>
+
+              <div style="margin-bottom: 40px">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 12px;
+                  "
+                >
+                  <div
+                    style="
+                      background: #2563eb;
+                      color: white;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <i class="fas fa-dollar-sign"></i>
+                  </div>
+                  <div>
+                    <h3
+                      style="
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin: 0;
+                      "
+                    >
+                      Sales Inquiries
+                    </h3>
+                    <p style="color: #64748b; margin: 0">
+                      Questions about pricing and plans
+                    </p>
+                  </div>
+                </div>
+                <p style="color: #2563eb; font-weight: 500; margin-left: 66px">
+                  sales@huddleboard.com
+                </p>
+              </div>
+
+              <div style="margin-bottom: 40px">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 12px;
+                  "
+                >
+                  <div
+                    style="
+                      background: #2563eb;
+                      color: white;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div>
+                    <h3
+                      style="
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin: 0;
+                      "
+                    >
+                      Phone Support
+                    </h3>
+                    <p style="color: #64748b; margin: 0">
+                      Monday - Friday, 9AM - 6PM PST
+                    </p>
+                  </div>
+                </div>
+                <p style="color: #2563eb; font-weight: 500; margin-left: 66px">
+                  +1 (555) 123-4567
+                </p>
+              </div>
+
+              <div style="margin-bottom: 40px">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 12px;
+                  "
+                >
+                  <div
+                    style="
+                      background: #2563eb;
+                      color: white;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <i class="fas fa-comments"></i>
+                  </div>
+                  <div>
+                    <h3
+                      style="
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin: 0;
+                      "
+                    >
+                      Live Chat
+                    </h3>
+                    <p style="color: #64748b; margin: 0">
+                      Chat with our support team
+                    </p>
+                  </div>
+                </div>
+                <p style="color: #64748b; margin-left: 66px">
+                  Available in-app for Pro and Enterprise users
+                </p>
+              </div>
+            </div>
+
+            <!-- Office Info -->
+            <div
+              style="
+                background: #f8fafc;
+                padding: 30px;
+                border-radius: 12px;
+                border: 1px solid #e2e8f0;
+                margin-top: 40px;
+              "
+            >
+              <h3
+                style="
+                  font-size: 20px;
+                  font-weight: 600;
+                  color: #1e293b;
+                  margin-bottom: 16px;
+                "
+              >
+                <i
+                  class="fas fa-map-marker-alt"
+                  style="color: #2563eb; margin-right: 8px"
+                ></i>
+                Our Office
+              </h3>
+              <p style="color: #64748b; line-height: 1.6; margin: 0">
+                123 Innovation Drive<br />
+                San Francisco, CA 94107<br />
+                United States
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div style="max-width: 800px; margin: 0 auto">
+          <div style="display: grid; gap: 20px">
+            <details
+              style="
+                background: white;
+                padding: 24px;
+                border-radius: 12px;
+                border: 1px solid #e2e8f0;
+                cursor: pointer;
+              "
+            >
+              <summary
+                style="
+                  font-size: 18px;
+                  font-weight: 600;
+                  color: #1e293b;
+                  outline: none;
+                  cursor: pointer;
+                "
+              >
+                How quickly can I expect a response?
+              </summary>
+              <p style="color: #64748b; line-height: 1.6; margin: 16px 0 0 0">
+                We typically respond to all inquiries within 24 hours during
+                business days. For urgent technical issues, Pro and Enterprise
+                customers can use our priority support channels for faster
+                response times.
+              </p>
+            </details>
+
+            <details
+              style="
+                background: white;
+                padding: 24px;
+                border-radius: 12px;
+                border: 1px solid #e2e8f0;
+                cursor: pointer;
+              "
+            >
+              <summary
+                style="
+                  font-size: 18px;
+                  font-weight: 600;
+                  color: #1e293b;
+                  outline: none;
+                  cursor: pointer;
+                "
+              >
+                Can I schedule a demo?
+              </summary>
+              <p style="color: #64748b; line-height: 1.6; margin: 16px 0 0 0">
+                Absolutely! Contact our sales team at sales@huddleboard.com to
+                schedule a personalized demo. We'll show you how HuddleBoard can
+                work specifically for your team's needs.
+              </p>
+            </details>
+
+            <details
+              style="
+                background: white;
+                padding: 24px;
+                border-radius: 12px;
+                border: 1px solid #e2e8f0;
+                cursor: pointer;
+              "
+            >
+              <summary
+                style="
+                  font-size: 18px;
+                  font-weight: 600;
+                  color: #1e293b;
+                  outline: none;
+                  cursor: pointer;
+                "
+              >
+                Do you offer training for teams?
+              </summary>
+              <p style="color: #64748b; line-height: 1.6; margin: 16px 0 0 0">
+                Yes! We provide onboarding sessions and training for Enterprise
+                customers. Our customer success team will help your team get up
+                and running quickly with best practices and advanced features.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-clipboard-list"></i>
+              <span>HuddleBoard</span>
+            </div>
+            <p>
+              Virtual whiteboards for remote teams. Collaborate in real-time
+              with powerful tools.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 HuddleBoard. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
